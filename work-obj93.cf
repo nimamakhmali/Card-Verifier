@@ -1,0 +1,7 @@
+v 4
+file . "CardVerifier_tb.vhd" "bba826fe60c5edacd4f444b5b14c145e3fc68be9" "20250128114747.723":
+  entity cardverifier_tb at 1( 0) + 0 on 17;
+  architecture behavioral of cardverifier_tb at 9( 208) + 0 on 18;
+file . "CardVerifier.vhd" "8d8e05a12dab1b86cf033d08fd532cad6ad6f3be" "20250128114747.709":
+  entity cardverifier at 1( 0) + 0 on 15;
+  architecture behavioral of cardverifier at 17( 731) + 0 on 16;
