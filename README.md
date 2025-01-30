@@ -1,2 +1,2 @@
 # Card-Verifier
-fuck
+**Final project of Logic circuit cource**
