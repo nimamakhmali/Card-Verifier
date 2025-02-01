@@ -2,11 +2,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity TB_Compute_Sum is
-end TB_Compute_Sum;
+entity Compute_Sum_tb is
+end Compute_Sum_tb;
 
-architecture test of TB_Compute_Sum is
-    signal input_vector : std_logic_vector(63 downto 0);
+architecture test of Compute_Sum_tb is
+    signal input_vector : std_logic_vector(59 downto 0);
     signal sum_out      : integer;
 
 begin
@@ -14,10 +14,10 @@ begin
 
     process
     begin
-        input_vector <= X"135792468ACEF012"; 
+        input_vector <= X"135792468ACEF01"; 
         wait for 10 ns;
         
-        assert sum_out = 95
+        assert sum_out = 93
             report "Compute_Sum FAILED!" severity error;
 
         wait;

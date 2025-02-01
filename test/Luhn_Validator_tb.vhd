@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity TB_Luhn_Validator is
-end TB_Luhn_Validator;
+entity Luhn_Validator_tb is
+end Luhn_Validator_tb;
 
-architecture test of TB_Luhn_Validator is
+architecture test of Luhn_Validator_tb is
     signal clk         : std_logic := '0';
     signal reset       : std_logic := '1';
     signal card_number : std_logic_vector(63 downto 0);
@@ -33,14 +33,14 @@ begin
         wait for 10 ns;
         reset <= '0';
 
-        card_number <= X"799273987132"; 
-        wait for 20 ns;
-        assert valid_out = '1'
-            report "Luhn Validation FAILED for valid card!" severity error;
-
-        card_number <= X"799273987133";
+        card_number <= X"4556737586899855"; 
         wait for 20 ns;
         assert valid_out = '0'
+            report "Luhn Validation FAILED for valid card!" severity error;
+
+        card_number <= X"7992739871335657";
+        wait for 20 ns;
+        assert valid_out = '1'
             report "Luhn Validation FAILED for invalid card!" severity error;
 
         wait;

@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity Double_Odd_Positions_TB is
-end Double_Odd_Positions_TB;
+entity Double_Odd_Positions_tb is
+end Double_Odd_Positions_tb;
 
-architecture testbench of Double_Odd_Positions_TB is
+architecture testbench of Double_Odd_Positions_tb is
     signal input_vector  : std_logic_vector(59 downto 0);
     signal output_vector : std_logic_vector(59 downto 0);
 

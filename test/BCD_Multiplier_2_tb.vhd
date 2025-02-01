@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity TB_BCD_Multiplier_2 is
-end TB_BCD_Multiplier_2;
+entity BCD_Multiplier_2_tb is
+end BCD_Multiplier_2_tb;
 
-architecture test of TB_BCD_Multiplier_2 is
+architecture test of BCD_Multiplier_2_tb is
 
     signal bcd_in  : std_logic_vector(3 downto 0);
     signal bcd_out : std_logic_vector(3 downto 0);
