@@ -18,7 +18,7 @@ begin
         temp <= ("0" & unsigned(bcd_in)) sll 1;
 
         if temp > "01001" then
-            temp <= temp + "0011"; 
+            temp <= temp + "0011";
         end if;
 
         bcd_out <= std_logic_vector(temp(3 downto 0));
